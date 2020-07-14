@@ -1,5 +1,6 @@
 import math
 
+#prime number check function
 def check_prime(n):
     if n == 1: 
         return False
@@ -9,6 +10,7 @@ def check_prime(n):
             return False 
     return True
 
+#this is the solution
 def manipulate_generator(g,n):
       # Enter your code here
     if check_prime(n+1):
@@ -16,6 +18,8 @@ def manipulate_generator(g,n):
         manipulate_generator(g, n+1)
   	pass
 
+
+# the code below is the default/driver code by hackerrank
 def positive_integers_generator():
     n = 1
     while True:
